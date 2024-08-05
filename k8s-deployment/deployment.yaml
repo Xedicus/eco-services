@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: eco-services-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: eco-services
+  template:
+    metadata:
+      labels:
+        app: eco-services
+    spec:
+      containers:
+      - name: eco-services
+        image: xedicus13/eco-services:latest
+        ports:
+        - containerPort: 80
+        env:
+        - name: DB_HOST
+          value: "mariadb-service"
+        - name: DB_USER
+          value: "eco_user"
+        - name: DB_PASSWORD
+          value: "password"
+        - name: DB_NAME
+          value: "eco_services"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: eco-services-service
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+  selector:
+    app: eco-services

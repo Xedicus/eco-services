@@ -1,0 +1,271 @@
+/* Style général pour le corps */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style pour les en-têtes */
+header {
+    margin-bottom: 30px;
+}
+
+footer {
+    margin-top: 30px;
+}
+
+/* Style général pour les cartes */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.card-text {
+    flex: 1;
+}
+
+.card-footer {
+    padding: 15px;
+    text-align: center;
+}
+
+/* Style pour les boutons */
+.btn-primary {
+    background-color: #28a745; /* Couleur de fond verte */
+    border-color: #28a745; /* Couleur des bordures verte */
+}
+
+.btn-primary:hover {
+    background-color: #218838; /* Couleur de fond verte plus foncée au survol */
+    border-color: #1e7e34; /* Couleur des bordures plus foncée au survol */
+}
+
+.btn-secondary {
+    background-color: #f8f9fa;
+    color: #6c757d;
+}
+
+.btn-secondary:disabled {
+    background-color: #e9ecef;
+    color: #6c757d;
+}
+
+/* Style pour le bouton de validation */
+.btn-validation {
+    background-color: #28a745; /* Couleur de fond verte */
+    border-color: #28a745; /* Couleur des bordures verte */
+    color: #fff; /* Couleur du texte blanc */
+    padding: 10px 20px; /* Ajuste le padding du bouton */
+    font-size: 1.25rem; /* Augmente la taille du texte du bouton */
+    border-radius: 5px; /* Coins arrondis pour le bouton */
+    text-transform: uppercase; /* Met le texte en majuscules */
+}
+
+.btn-validation:hover {
+    background-color: #218838; /* Couleur de fond verte plus foncée au survol */
+    border-color: #1e7e34; /* Couleur des bordures plus foncée au survol */
+}
+
+/* Style pour la navbar */
+.navbar {
+    background-color: #28a745; /* Couleur de fond verte */
+    border-radius: 10px;
+    padding: 0.5rem 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+.navbar-nav .nav-link {
+    font-size: 2rem;
+    padding: 0.75rem 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.navbar-nav .dropdown-menu {
+    border-radius: 5px;
+    padding: 0.5rem 0;
+}
+
+.navbar-nav .dropdown-item {
+    font-size: 1.25rem;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+}
+
+.navbar-nav .dropdown-item:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Style pour les sections */
+.section {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+/* Style pour les images dans les sections */
+.section img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Style pour centrer le bouton de validation */
+.text-center {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Style pour les boutons de quantité */
+.quantity-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantity-input {
+    width: 60px;
+    text-align: center;
+    margin: 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.btn-outline-secondary {
+    border-color: #ddd;
+    color: #333;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #f8f9fa;
+}
+
+/* Pour les petits écrans */
+@media (max-width: 767px) {
+    .navbar-nav {
+        text-align: center;
+        width: 100%;
+    }
+    .navbar-nav .nav-item {
+        display: block;
+        margin-bottom: 8px;
+        margin: 0;
+    }
+}
+/* Style pour le titre Catalogue des Produits */
+.title-catalogue {
+    font-size: 2.5rem; /* Taille de police plus grande */
+    font-weight: bold; /* Texte en gras */
+    color: #28a745; /* Couleur du texte verte */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Ombre légère pour le texte */
+    margin-bottom: 30px; /* Espacement sous le titre */
+    border-bottom: 2px solid #28a745; /* Bordure inférieure verte */
+    padding-bottom: 10px; /* Espacement sous la bordure */
+}
+/* Style pour le titre Nos Services */
+.title-services {
+    font-size: 2.5rem; /* Taille de police plus grande */
+    font-weight: bold; /* Texte en gras */
+    color: #28a745; /* Couleur du texte verte */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Ombre légère pour le texte */
+    margin-bottom: 30px; /* Espacement sous le titre */
+    border-bottom: 2px solid #28a745; /* Bordure inférieure verte */
+    padding-bottom: 10px; /* Espacement sous la bordure */
+}
+/* Style pour le titre Contactez-nous */
+.title-contact {
+    font-size: 2.5rem; /* Taille de police plus grande */
+    font-weight: bold; /* Texte en gras */
+    color: #28a745; /* Couleur du texte verte */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Ombre légère pour le texte */
+    margin-bottom: 30px; /* Espacement sous le titre */
+    border-bottom: 2px solid #28a745; /* Bordure inférieure verte */
+    padding-bottom: 10px; /* Espacement sous la bordure */
+}
+/* Style pour le formulaire de contact */
+.contact-form .form-group {
+    margin-bottom: 1.5rem; /* Augmenter l'espacement entre les champs */
+}
+
+/* Style pour les champs de texte du formulaire */
+.contact-form .form-control {
+    border: 1px solid #ced4da; /* Couleur de bordure par défaut */
+    border-radius: 8px; /* Coins arrondis */
+    padding: 0.75rem 1.25rem; /* Espacement interne */
+    font-size: 1rem; /* Taille de police */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transition douce */
+}
+
+/* Style pour les champs de texte au focus */
+.contact-form .form-control:focus {
+    border-color: #28a745; /* Couleur de bordure au focus */
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25); /* Ombre de focus */
+    outline: none; /* Retirer le contour par défaut */
+}
+
+/* Style pour le bouton d'envoi */
+.contact-form .btn-success {
+    background-color: #28a745; /* Couleur de fond verte */
+    border-color: #28a745; /* Couleur des bordures verte */
+    padding: 0.75rem 1.5rem; /* Espacement interne */
+    font-size: 1.25rem; /* Taille de police */
+    font-weight: bold; /* Texte en gras */
+    border-radius: 5px; /* Coins arrondis */
+    transition: background-color 0.3s, border-color 0.3s; /* Transition douce */
+}
+
+/* Style pour le bouton d'envoi au survol */
+.contact-form .btn-success:hover {
+    background-color: #218838; /* Couleur de fond au survol */
+    border-color: #1e7e34; /* Couleur des bordures au survol */
+}
+
+
