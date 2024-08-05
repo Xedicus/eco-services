@@ -74,7 +74,7 @@ if (!$result) {
     </header>
 
     <main class="container py-5">
-    <h2 class="text-center mb-4 title-catalogue">Catalogue des Produits</h2>
+        <h2 class="text-center mb-4 title-catalogue">Catalogue des Produits</h2>
 
         <div class="row">
             <?php while ($row = $result->fetch_assoc()): ?>
