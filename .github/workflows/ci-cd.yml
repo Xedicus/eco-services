@@ -55,6 +55,10 @@ jobs:
           chmod +x ./kubectl
           sudo mv ./kubectl /usr/local/bin/kubectl
 
+      - name: Configure kubeconfig
+        run: |
+          echo "${{ secrets.KUBECONFIG }}" > $HOME/.kube/config
+
       - name: Deploy to Kubernetes
         run: |
           kubectl apply -f k8s-deployment/config.yaml
