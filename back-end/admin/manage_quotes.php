@@ -7,6 +7,14 @@ if (!isset($_SESSION['username']) || $_SESSION['role'] !== 'admin') {
     exit();
 }
 
+// Gérer la déconnexion
+if (isset($_GET['logout']) && $_GET['logout'] === 'true') {
+    session_unset(); // Détruire toutes les variables de session
+    session_destroy(); // Détruire la session
+    header("Location: ../../front-end/index.php"); // Rediriger vers la page d'accueil après déconnexion
+    exit();
+}
+
 // Inclure le fichier de configuration de la base de données
 include '../config/db.php'; // Assurez-vous que ce chemin est correct pour votre projet
 

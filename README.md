@@ -24,4 +24,3 @@ Ce projet est une application web pour Eco-Services, une société spécialisée
 ## License
 
 MIT
-.
