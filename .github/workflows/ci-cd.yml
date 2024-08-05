@@ -53,5 +53,9 @@ jobs:
 
       - name: Deploy to Kubernetes
         run: |
-          kubectl apply -f k8s-deployment/  # Adjust path to your Kubernetes manifests
-          kubectl rollout restart deployment eco-services-deployment
+           kubectl apply -f ../../k8s-deployment/config.yaml
+           kubectl apply -f ../../k8s-deployment/deployment.yaml
+           kubectl apply -f ../../k8s-deployment/ingress.yaml
+           kubectl apply -f ../../k8s-deployment/maria-deployment.yaml
+           kubectl apply -f ../../k8s-deployment/service.yaml
+           kubectl rollout restart deployment eco-services-deployment
